@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    animation: bod 3s ease-in-out;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+@keyframes bod{
+    from{
+        background-color: black;
+        opacity: 0;
+    }
+    to{
+        background-color: white;
+        opacity: 1;
+    }
+}
+.head{
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+}
+.qr-code-generator {
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 50px;
+    width: 500px;
+    margin: 4% auto;
+    }
+    
+    .qr-code-generator * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+    
+    #qrcode {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    text-align: center;
+    }
+    
+    #qrcode a {
+    font-size: 0.8em;
+    }
+    
+    .qr-url, .qr-size {
+    padding: 0.5em;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+    
+    .qr-url {
+    width: 75%;
+    }
+    
+    .qr-size {
+    width: 23%;
+    }
+    
+    .generate-qr-code {
+    animation: buttonn ease-in-out 2s;
+    border-radius: 7px;
+    transition: 0.5s ease-in-out;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    margin: 0.5em 0 0;
+    padding: 0.25em;
+    font-size: 1.2em;
+    border: 3px solid black;
+    cursor: pointer;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    }
+    .generate-qr-code:hover {
+        border-radius: 25px;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+        margin: 0.5em 0 0;
+        padding: 0.25em;
+        font-size: 1.2em;
+        border: 3px solid black;
+        cursor: pointer;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        }
+    @keyframes buttonn{
+        from{
+            font-size: 0em;
+            width: 0%;
+        }
+        to{
+            font-size: 1.2em;
+            width: 100%;
+        }
+    }
+
+        .footer{
+            position: absolute;
+            bottom: 0;
+            background-color: black;
+            height: 20vh;
+            width: 100%;
+        }
+        .footer img{
+            width: 4%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding: 20px;
+        }
+        address{
+            color: white;
+            position: absolute;
+            bottom: 25px;
+            left: 15px;
+        }
+
+
+    @media only screen and (max-width:600px){
+        .qr-code-generator {
+            width: 300px;
+            padding: 50px 20px;
+            margin: 15% auto;
+            }
+            .footer{
+                position: absolute;
+                bottom: 0;
+                background-color: black;
+                height: 20vh;
+                width: 100%;
+            }
+            .footer img{
+                width: 8%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                padding: 20px 0;
+            }
+            address{
+                margin: 0 auto;
+                font-size: 16px;
+                color: white;
+                position: absolute;
+                bottom: 25px;
+                text-align: center;
+                width: 90%;
+            }
+    }
